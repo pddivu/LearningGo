@@ -21,6 +21,11 @@ func main() {
 	fmt.Println("--------------------------------")
 	for i := 0; i < 40; i++ {
 		slice = append(slice, i)
-		fmt.Println("Slice", slice[i], " len-", len(slice), " Cap-", cap(slice))
+		fmt.Println(slice[i], " len-", len(slice), " Cap-", cap(slice))
 	}
+
+	//Appending Slice with slice elements again , like variadic expression
+
+	slice = append(slice, slice...)
+	fmt.Println(slice)
 }

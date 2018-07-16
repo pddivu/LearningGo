@@ -2,6 +2,16 @@ package main
 
 import "fmt"
 
+type currency int
+
+/*USD is currency*/
+const (
+	USD currency = iota
+	GBP
+	EUR
+	RMB
+)
+
 func main() {
 	var x [100]int
 	/* array with total capacity of 100 with length 50
@@ -19,4 +29,18 @@ func main() {
 	fmt.Println(x[2:6])
 	fmt.Printf("%T\n", x)
 	fmt.Println(len(x))
+
+	symbols := [...]string{USD: "$", GBP: "@", EUR: "#", RMB: "%"}
+	fmt.Println(symbols)
+	fmt.Println(USD, symbols[USD])
+
+	// Creates an array of 10 ie, 0-9 and 9th value will be -1
+	num := [...]int{9: -1}
+	fmt.Println(num)
+
+	months := [...]string{1: "January", 2: "February", 3: "March" /*  */, 12: "December"}
+	summer := months[2:3]
+	fmt.Println(months)
+	fmt.Println(summer)
+
 }
