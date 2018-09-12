@@ -14,9 +14,9 @@ func (o *orange) decrement(u int) {
 	o.quantity -= u
 }
 
-/*func (o *orange) display() string {
+func (o orange) display() string {
 	return fmt.Sprintf("%v", o.quantity)
-}*/
+}
 
 func main() {
 	var fruit orange

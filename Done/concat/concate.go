@@ -12,10 +12,10 @@ func main() {
 	fmt.Println("Enter your Last name")
 	fmt.Scan(&l)
 	fmt.Println(fullname(f, m, l))
-	fmt.Println(l + m + f)
+	fmt.Println(l + " " + m + " " + f)
 }
 
 //Sprint will concatenate strings with out space
 func fullname(f, m, l string) (string, string) {
-	return fmt.Sprint(f, " ", m, " ", l), fmt.Sprintf(l, " ", m, " ", f)
+	return fmt.Sprint(f, " ", m, " ", l, "\n"), fmt.Sprintf(l, m, f)
 }

@@ -9,10 +9,11 @@ func main() {
 	y := []string{"a", "b", "c", "d"}
 
 	x = []string{"a"}
+
 	fmt.Println(y, x)
 	fmt.Println(y[2:4])
-	//Need to learn on myString
-	fmt.Println("myString"[0])
+	// "Divya"[0] = "D" , ASCII of D is 68, prints 68
+	fmt.Println("Divya"[0])
 	slice := make([]int, 0, 5)
 	fmt.Println("--------------------------------")
 	fmt.Println(slice)

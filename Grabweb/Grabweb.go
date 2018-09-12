@@ -17,3 +17,21 @@ func main() {
 	res.Body.Close()
 	fmt.Printf("%s", page)
 }
+
+
+package main
+
+import (
+	"fmt"
+	"net/http"
+	"io/ioutil"
+)
+
+func main()
+{
+ res,_ := http.Get("url")
+ page,_:= ioutil.ReadAll(res.Body)
+ res.Body.Close()
+ fmt.Printf("%s",page)
+ 
+}

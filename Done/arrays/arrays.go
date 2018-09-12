@@ -40,7 +40,8 @@ func main() {
 
 	months := [...]string{1: "January", 2: "February", 3: "March" /*  */, 12: "December"}
 	summer := months[2:3]
-	fmt.Println(months)
+	fmt.Println(months[0:])
+	fmt.Printf("%T\n", months)
 	fmt.Println(summer)
 
 }

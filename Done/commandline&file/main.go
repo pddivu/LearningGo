@@ -10,12 +10,12 @@ func main() {
 	s, sep := "", ""
 	for _, arg := range os.Args[1:] {
 		s += sep + arg
-		sep = " "
+		sep = "/"
 	}
 
 	fmt.Println(s)
 
 	fmt.Println(strings.Join(os.Args[1:], " "))
 	fmt.Println(os.Args[0:])
-	fmt.Println(strings.Split(s, sep))
+	fmt.Println(strings.Split(s, "/"))
 }

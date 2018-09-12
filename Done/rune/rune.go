@@ -10,6 +10,7 @@ func main() {
 	// single qoutes 'a' indicates its a rune not a string
 	foo := 'a'
 	fmt.Println(foo)
+	fmt.Println(string(foo))
 	fmt.Printf("%T\n", foo)
 	fmt.Printf("%T\n", rune(foo))
 }
