@@ -19,5 +19,5 @@ func square(p float64) (float64, error) {
 		return 0, errors.New("The square root of a negative number")
 	}
 
-	return 40, nil
+	return p * p, nil
 }

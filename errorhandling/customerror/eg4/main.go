@@ -15,7 +15,7 @@ func (l locationerror) Error() string {
 }
 
 func main() {
-  	_, err := square(-10.11)
+	_, err := square(-10.11)
 	if err != nil {
 		log.Println(err)
 	}

@@ -6,7 +6,7 @@ import (
 )
 
 type person struct {
-	Fisrt       string
+	First       string
 	Last        string
 	Age         int
 	notexported bool

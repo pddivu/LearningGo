@@ -16,5 +16,5 @@ func main() {
 	var p1 person
 	data := strings.NewReader(`{"First":"Divya","Last":"Divakaran","Age":34}`)
 	json.NewDecoder(data).Decode(&p1)
-	fmt.Println(p1)
+	fmt.Println(data)
 }
